@@ -122,7 +122,7 @@ class string {
 		return $string;
 	}
 
-	staticfunction haddslashes($string, $force = 0) {
+	static function haddslashes($string, $force = 0) {
 		if(!MAGIC_QUOTES_GPC || $force) {
 			if(is_array($string)) {
 				foreach($string as $key => $val) {

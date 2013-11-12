@@ -2,7 +2,7 @@
 !defined('IN_HDWIKI') && exit('Access Denied');
 class control extends base{
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load("statistics");
 		$this->view->setlang($this->setting['lang_name'],'back');
 		$this->cache_time=60*60*3;

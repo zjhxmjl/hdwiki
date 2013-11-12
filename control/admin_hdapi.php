@@ -6,7 +6,7 @@ class control extends base{
 	var $json;
 	
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load('user');
 		$this->load('doc');
 		$this->load('hdapi');

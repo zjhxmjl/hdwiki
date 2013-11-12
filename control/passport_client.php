@@ -6,7 +6,7 @@ class control extends base{
 	var $forward;
 	var $verify;
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load('user');
 		$this->userdb=urldecode($this->get[2]);
 		$this->forward=urldecode(substr($_SERVER['QUERY_STRING'],strpos($_SERVER['QUERY_STRING'],'-',strlen($this->get[0].$this->get[1].$this->get[2]))+1,-33));

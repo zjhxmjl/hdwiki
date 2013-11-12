@@ -100,7 +100,7 @@ class file {
 		}
 	}
 
-	function writetofile($filename,&$data,$type=0){
+	static function writetofile($filename,&$data,$type=0){
 		//$type为0时,写文件不追加.为1是,写文件追加
 		$wtype = $type?'ab':'wb';
 		if($fp=@fopen($filename,$wtype)){

@@ -141,7 +141,7 @@ class util{
      *
      * @return string
      */
-    function getip(){
+    static function getip(){
         if (getenv('HTTP_CLIENT_IP') && strcasecmp(getenv('HTTP_CLIENT_IP'), 'unknown')){
             $ip = getenv('HTTP_CLIENT_IP');
         }else if (getenv('HTTP_X_FORWARDED_FOR') && strcasecmp(getenv('HTTP_X_FORWARDED_FOR'), 'unknown')){

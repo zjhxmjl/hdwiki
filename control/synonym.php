@@ -4,7 +4,7 @@
 class control extends base{
 
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load("synonym");
 		$this->load("doc");
 	}

@@ -5,7 +5,7 @@
 class control extends base{
 
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load("actions");
 		$this->view->setlang($this->setting['lang_name'],'back');
 	}

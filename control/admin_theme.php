@@ -8,7 +8,7 @@ class control extends base{
 	var $filename;
 	
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->view->setlang($this->setting['lang_name'],'back');
 		$this->tempfile=HDWIKI_ROOT."/data/tmp/".$GLOBALS['theme'].'_temp.php';
 		$this->load('theme');

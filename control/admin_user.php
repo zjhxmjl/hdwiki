@@ -6,7 +6,7 @@ class control extends base{
 	var $WIKI_FOUNDER;
 
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load('user');
 		$this->load('usergroup');
 		$this->view->setlang($this->setting['lang_name'],'back');

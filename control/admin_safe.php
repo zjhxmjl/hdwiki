@@ -6,7 +6,7 @@ class control extends base{
 	var $safe;
 	var $hdwiki_root;
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load('filecheck');
 		$this->view->setlang($this->setting['lang_name'],'back');
 		$this->safe = $this->cache->getcache('safe');

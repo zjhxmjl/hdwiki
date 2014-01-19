@@ -4,7 +4,7 @@
 class control extends base{
 
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load('ftp');
 		$this->load('setting');
 		$this->view->setlang($this->setting['lang_name'],'back');

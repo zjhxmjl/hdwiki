@@ -3,7 +3,7 @@
 
 class control extends base{
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		//$this->load('filemanager');
 		$this->load('dir');
 		$this->load('ftp');

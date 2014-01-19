@@ -7,7 +7,7 @@
 class control extends base{
 
 	function control(& $get,& $post){
-		$this->base( & $get,& $post);
+		$this->base($get,$post);
 		$this->load("reference");
 		$this->load("user");
 	}

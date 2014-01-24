@@ -1,8 +1,8 @@
 <?php
 	
 /*the hdwiki entrance */
-//error_reporting(0);
-error_reporting(E_ALL);
+error_reporting(0);
+//error_reporting(E_ALL);
 
 // @set_magic_quotes_runtime(false);从php5.3起已经弃用
 if (version_compare(PHP_VERSION, '5.3.0', '<')) {

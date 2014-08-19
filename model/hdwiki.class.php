@@ -88,7 +88,7 @@ class hdwiki {
 			$control->hsetcookie('querystring',$this->querystring, 3600);
 		}
 		$method = $this->get[1];
-		$exemption=true; //Ãâ¼ì·½·¨µÄ±êÖ¾£¬Ãâ¼ì·½·¨²»ÐèÒª¾­¹ýÈ¨ÏÞ¼ì²â
+		$exemption=true; //ï¿½ï¿½ì·½ï¿½ï¿½ï¿½Ä±ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ¼ï¿½ï¿½
 		if('hd'!= substr($method, 0, 2)){
 			$exemption=false;
 			$method = 'do'.$this->get[1];
@@ -126,7 +126,7 @@ class hdwiki {
 				foreach($this->$check_key as $getvalue) {
 					foreach ($check_val as $invalue) {
 						if(stripos($getvalue, $invalue) !== false){
-							exit('No Aceess!×¢ÒâÃô¸Ð´Ê!');
+							exit('No Aceess!×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½!');
 						}
 					}
 				}

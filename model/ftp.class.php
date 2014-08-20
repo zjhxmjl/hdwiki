@@ -1,4 +1,4 @@
-<?
+<?php
 
 	define("FTP_TIMEOUT",90);
 

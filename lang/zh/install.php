@@ -58,7 +58,7 @@ $lang['commonInstallComplete'] = '安装完成';
 
 //Setup Common Tip
 $lang['tipAlreadyInstall'] = '&#x60A8;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x8FC7;HDWiki&#x7CFB;&#x7EDF;,<a href="../">&#x70B9;&#x51FB;&#x8FDB;&#x5165;&#x9996;&#x9875;</a>';
-$lang['tipLeftHelp'] = '<strong>技术支持：</strong><br />安装中遇到任何问题请到<span class="red"><a href="http://kaiyuan.hudong.com/bbs">HDWiki BBS</a></span>提问，您的问题将在第一时间得到解答。';
+$lang['tipLeftHelp'] = '<strong>技术支持：</strong><br />安装中遇到任何问题请到<span class="red"><a href="https://github.com/zjhxmjl/hdwiki/issues">HDWiki技术支持</a></span>提问，您的问题将在第一时间得到解答。';
 $lang['tipGenErrInfo'] = '由于您目录属性或服务器配置原因, 无法继续安装HDWiki, 请仔细阅读安装须知！';
 
 /**

@@ -1247,7 +1247,7 @@ EOT;
 			require_once HDWIKI_ROOT.'/lib/util.class.php';
 			@util::hfopen('http://kaiyuan.hudong.com/count2/in.php?action=install', 0, 'info='.urlencode($info));
 			
-			$str = "<div id=\"wrapper1\"><span style=\"color:red\">{$lang['stepSetupSuccessTip']}</span></div>";
+			$str = "<div id=\"wrapper1\"><span style=\"color:red\">{$lang['stepSetupSuccessTip']}</span><a href='../index.php'>{$lang['stepSetupGoTOIndex']}</a></div>";
 			$str .= '<iframe id="count" name="count" src="http://kaiyuan.hudong.com/count2/interface.php?info='.$info.'" scrolling="no" width="455" style="height:370px" frameborder="0"></iframe>';
 			break;
 			/*

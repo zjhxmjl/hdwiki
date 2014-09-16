@@ -11,10 +11,10 @@ class control extends base{
 	}
 	
 	function dodefault(){
-		$this->dorecentupdate();
+		$this->dorecentchange();
 	}
 	
-	function dorecentupdate(){
+	function dorecentchange(){
 		$page = max(1, intval($this->get[2]));
 		$start_limit = ($page - 1) * $this->setting['list_recentupdate'];
 		$count=$this->db->fetch_total('doc','1');
@@ -26,7 +26,7 @@ class control extends base{
 		for($i=0;$i<$temcount;$i++){
 			$list[$i]['time']=$list[$i]['lastedit'];
 		}
-		$departstr=$this->multi($count, $this->setting['list_recentupdate'], $page,'list-recentupdate');
+		$departstr=$this->multi($count, $this->setting['list_recentupdate'], $page,'list-recentchange');
 		$this->view->assign('navtitle',$this->view->lang['recentUpdate'].'-');
 		$this->view->assign("departstr",$departstr);
 		$this->view->assign('type','recentupdate');

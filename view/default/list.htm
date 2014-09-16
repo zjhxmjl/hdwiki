@@ -27,7 +27,7 @@
 		<!--{/if}-->
 	</span>
 	<!--{if $type=='focus' ||$type=='hotdoc' || $type=='recentdoc' ||$type=='recentupdate' ||$type=='hot' ||$type=='champion' }-->
-		<a href="{url list-rss-$type}"  id="rss" ><img  class="m-r8" src="style/default/rss.gif"/></a>
+		<a href="{url list-rss-recentchange}"  id="rss" ><img  class="m-r8" src="style/default/rss.gif"/></a>
 	<!--{/if}-->
 	</h2>
 	<dl class="col-dl">
@@ -65,7 +65,7 @@
 		<li><a href="{url list-focus-2}"  <!--{if $type=='hot'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/hot.gif" />{lang hotDoc}</a></li>
 		<li><a href="{url list-focus-3}"  <!--{if $type=='champion'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/champion.gif" />{lang wonderDoc}</a></li>
 		<li><a href="{url list-focus-1}"  <!--{if $type=='focus'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/bang_tj.gif" />{lang focusDoc}</a></li>
-		<li><a href="{url list-recentupdate}"  <!--{if $type=='recentupdate'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/bang_zjgx.gif"/>{lang recentUpdate}</a></li>
+		<li><a href="{url list-recentchange}"  <!--{if $type=='recentupdate'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/bang_zjgx.gif"/>{lang recentUpdate}</a></li>
 		<li><a href="{url list-weekuserlist}"  <!--{if $type=='weekuserlist'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/bang_szgxb.gif"/>{lang weekUserList}</a></li>
 		<li><a href="{url list-allcredit}"  <!--{if $type=='allcredit'}-->class="on"<!--{/if}-->><img  src="style/default/gl_space/bang_z.gif" />{lang allcredit}</a></li>
 		<li><a href="{url list-popularity}" <!--{if $type=='popularity'}-->class="on"<!--{/if}-->><img src="style/default/gl_space/bang_rq.gif"/>{lang popularity}</a></li>

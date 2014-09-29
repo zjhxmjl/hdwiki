@@ -5,7 +5,7 @@ HDwiki
 
 互动维客开源系统（HDwiki）给国内众多的维基爱好者提供一个免费、易用、功能强大的中文维基建站系统
 
-###
+####
 已经修复问题:
 ------
 1,~~[修复PHP版本5.4+以上版本安装后显示空白](http://www.92wiki.com/hdwiki/doc-view-246.html)~~
@@ -24,7 +24,7 @@ HDwiki
 
 8,~~修复后台管理中心--模块--FTP设置乱码问题~~
 
-###
+####
 增强功能
 ------
 
@@ -32,4 +32,6 @@ HDwiki
 
 [参考资料的链接修改为超链接](http://www.92wiki.com/hdwiki/doc-view-198.html)
 
-**[更多参考资料请访问92wiki](http://www.92wiki.com/hdwiki/category-view-20.html)**
+------
+>**[如有问题或BUG反馈请猛击这里](https://github.com/zjhxmjl/hdwiki/issues)**
+>**[更多参考资料请访问92wiki](http://www.92wiki.com/hdwiki/category-view-20.html)**

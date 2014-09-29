@@ -8,8 +8,7 @@ HDwiki
 ####
 已修复功能:
 ------
-~~<a href="http://www.92wiki.com/hdwiki/doc-view-246.html" target="_blank">修复PHP版本5.4+以上版本安装后显示空白</a>~~
-1.~~[修复PHP版本5.4+以上版本安装后显示空白](http://www.92wiki.com/hdwiki/doc-view-246.html)~~
+1.~~<a href="http://www.92wiki.com/hdwiki/doc-view-246.html" target="_blank">修复PHP版本5.4+以上版本安装后显示空白</a>~~
 
 2.~~[首页点最近更新处更多选项时显示No Aceess错误](http://www.92wiki.com/hdwiki/doc-view-504.html)~~
 

@@ -22,7 +22,9 @@ HDwiki
 
 7.~~<a href="http://www.92wiki.com/hdwiki/doc-view-492.html" target="_blank">修复后台重建sitemap时出现No Aceess!</a>~~
 
-8.~~修复后台管理中心--模块--FTP设置乱码问题~~
+8.~~<a href="http://www.92wiki.com/hdwiki/doc-view-505.html" target="_blank">修复友情链接拖动无效</a>~~
+
+9.~~修复后台管理中心--模块--FTP设置乱码问题~~
 
 ####
 增强功能

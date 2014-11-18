@@ -16,8 +16,15 @@ class friendlinkmodel {
 		$list=array();
 		$query = $this->db->query("SELECT * FROM ".DB_TABLEPRE."friendlink ORDER BY displayorder,id DESC");
 		while($friendlink=$this->db->fetch_array($query)){
-			if(substr($friendlink['url'],0,7)!="http://"){
-				$friendlink['url']='http://'.$friendlink['url'];
+// 			if(substr($friendlink['url'],0,7)!="http://"){
+// 				$friendlink['url']='http://'.$friendlink['url'];
+// 			}
+			if(substr($flink['url'],0,4)!="http"){
+				if(substr($flink['url'],0,5) =="https"){
+					$flink['url']="https://".$flink['url'];
+				}else{
+					$flink['url']="http://".$flink['url'];
+				}
 			}
 			$list[]=$friendlink;
 		}

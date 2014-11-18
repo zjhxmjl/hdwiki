@@ -27,9 +27,21 @@ class control extends base{
 				$flink['logourl']=trim($this->post['logourl']);
 			$flink['description']=htmlspecialchars(trim($this->post['description']));
 			if(!empty($flink['name']) && preg_match("/^\w[\w\&\=\?\:\/\.\-]+$/i",$flink['url']) && !empty($flink['description'])){
-				if(substr($flink['url'],0,7)!="http://"){
-					$flink['url']="http://".$flink['url'];
+// 				if(substr($flink['url'],0,7)!="http://"){
+// 					$flink['url']="http://".$flink['url'];
+// 				}
+				if(substr($flink['url'],0,4)!="http"){
+					if(substr($flink['url'],0,5) =="https"){
+						$flink['url']="https://".$flink['url'];
+					}else{
+						$flink['url']="http://".$flink['url'];
+					}
 				}
+				
+				
+				
+				
+				
 				$_ENV['friendlink']->addlink($flink);
 				$this->cache->removecache('data_'.$GLOBALS['theme'].'_index');
 				$this->message($this->view->lang['friendLinkAddSuccess'],'index.php?admin_friendlink');
@@ -53,8 +65,15 @@ class control extends base{
 			$flink['id']=$this->post['id'];
 			$flink['description']=htmlspecialchars(trim($this->post['description']));
 			if(!empty($flink['name']) && preg_match("/^\w[\w\&\=\?\:\/\.\-]+?$/i",$flink['url']) && is_numeric($flink['id']) && !empty($flink['description'])){
-				if(substr($flink['url'],0,7)!="http://"){
-					$flink['url']="http://".$flink['url'];
+// 				if(substr($flink['url'],0,7)!="http://"){
+// 					$flink['url']="http://".$flink['url'];
+// 				}
+				if(substr($flink['url'],0,4)!="http"){
+					if(substr($flink['url'],0,5) =="https"){
+						$flink['url']="https://".$flink['url'];
+					}else{
+						$flink['url']="http://".$flink['url'];
+					}
 				}
 				$_ENV['friendlink']->editlink($flink);
 				$this->cache->removecache('data_'.$GLOBALS['theme'].'_index');

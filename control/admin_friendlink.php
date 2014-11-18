@@ -75,7 +75,7 @@ class control extends base{
 		}
 	}
 	
-	function doupdateorder(){
+	function dochangeorder(){
 		$link_num=string::stripspecialcharacter(trim($this->post['order']));
 		$order=explode(",",$link_num);
 		$_ENV['friendlink']->updateorder($order);

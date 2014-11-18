@@ -30,7 +30,7 @@ $(document).ready(function() {
 			for(var i=0;i<numValue.length;i++){
 			order+=$(numValue[i]).val()+",";
 			}
-			$.post("index.php?admin_friendlink-updateorder",{order:order});
+			$.post("index.php?admin_friendlink-changeorder",{order:order});
 		}
 	});
 });

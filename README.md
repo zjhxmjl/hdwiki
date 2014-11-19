@@ -26,7 +26,9 @@ HDwiki
 
 9.~~<a href="http://www.92wiki.com/hdwiki/doc-view-506.html" target="_blank">修复以https开头的频道或友情链接</a>~~
 
-10.~~修复后台管理中心--模块--FTP设置乱码问题~~
+10.~~<a href="http://www.92wiki.com/hdwiki/doc-view-508.html" target="_blank">修复后台友情链接在非IE浏览器中无法删除</a>~~
+
+11.~~修复后台管理中心--模块--FTP设置乱码问题~~
 
 ####
 增强功能

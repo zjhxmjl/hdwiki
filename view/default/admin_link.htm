@@ -6,7 +6,7 @@ var beginMoving=false;
 var selectAll = function (eleName,state){
 	$("input[name='"+eleName+"']").attr('checked',state);
 }
-var remove = function (){
+var checkdel = function (){
 	if(checkBox('link_id[]')!=false){
 		if(confirm('{lang msgJsDelLink}')==false){
 				return false;
@@ -93,7 +93,7 @@ $(document).ready(function() {
 	<tfoot>
 		<tr>
 			<td><input name="chkall" onclick="selectAll('link_id[]',this.checked)" type="checkbox" /> 全选</td>
-			<td colspan="5"><input type="button" class="inp_btn2 m-r10" name="delsel" value="{lang magDelCurrentItem}" onclick="remove();"/> <input type="button" class="inp_btn2 m-r10" value="{lang openSortable}" onclick="$('#list').sortable('enable')"/> <input type="button" class="inp_btn2 m-r10"  value="{lang offSortable}" onclick="$('#list').sortable('disable')"/></td>			
+			<td colspan="5"><input type="button" class="inp_btn2 m-r10" name="delsel" value="{lang magDelCurrentItem}" onclick="checkdel();"/> <input type="button" class="inp_btn2 m-r10" value="{lang openSortable}" onclick="$('#list').sortable('enable')"/> <input type="button" class="inp_btn2 m-r10"  value="{lang offSortable}" onclick="$('#list').sortable('disable')"/></td>			
 		</tr>	
 	</tfoot>
 </table>

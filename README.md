@@ -28,7 +28,7 @@ HDwiki
 
 10.~~<a href="http://www.92wiki.com/hdwiki/doc-view-508.html" target="_blank">修复后台友情链接在非IE浏览器中无法删除</a>~~
 
-11.~~修复后台管理中心--模块--FTP设置乱码问题~~
+11.~~<a href="http://www.92wiki.com/hdwiki/doc-view-509.html" target="_blank">修复后台缓存保存设置提示No Aceess错误</a>~~
 
 ####
 增强功能

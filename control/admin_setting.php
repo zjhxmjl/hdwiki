@@ -393,7 +393,7 @@ class control extends base{
 		$this->view->display("admin_cache");
 	}
 	
-	function doupdatecache(){
+	function dosavecache(){
 		$cachelist = array('index_cache_time','list_cache_time');
 		foreach($cachelist as $cache){
 			if(!is_numeric($this->post[$cache."_value"])){

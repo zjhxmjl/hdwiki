@@ -1,2 +1,2 @@
 var kaiyuan_tip_title = 'HDWiki\u6700\u65b0\u52a8\u6001\uff08\u53ea\u6709\u7ba1\u7406\u5458\u624d\u80fd\u770b\u5230\uff09';
-var hdwiki_tip_content = "  <iframe frameborder='0' marginheight='0' marginwidth='0' scrolling='no' src='./index.html' style='width:280px;height:200px;'>";
+var hdwiki_tip_content = "  <iframe frameborder='0' marginheight='0' marginwidth='0' scrolling='no' src='./tip.html' style='width:280px;height:200px;'>";

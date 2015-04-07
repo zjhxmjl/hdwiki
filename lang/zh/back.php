@@ -1765,4 +1765,7 @@ $lang['file'] = '文件';
 $lang['cannot_write_edit_online'] = '无法写入，<br>若需在线编辑，请将文件上级目录目录和模板文件属性设置为 777。';
 $lang['operation_success'] = '操作成功！';
 $lang['operation_failure'] = '操作失败！';
+$lang['recordClear']='删除后台记录';
+$lang['recordDelSucess'] = '记录删除成功';
+$lang['adv_position_8']='子分类左侧广告';
 ?>

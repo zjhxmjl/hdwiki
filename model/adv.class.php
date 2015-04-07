@@ -182,6 +182,12 @@ class advmodel {
 		case 6:
 			$isfloat=true;
 			break;
+
+		case 8:
+			$adv_range=$this->base->view->lang['in_range2']."<optgroup label='".$this->base->view->lang['adv_cat']."'>".$catstr."</optgroup>";
+			$dis_pos=$this->base->view->lang['dis_pos_2'];
+			break;
+			
 		default:
 			break;
 		}

@@ -113,9 +113,9 @@ class globalmodel {
 		$advlist=array();
 		$categorys=array('all',$this->base->get[2]);
 		foreach($advertisement as $adv){
-			if(in_array($adv['type'],array('0','1','7'))&&($adv['starttime']=='0'||$adv['starttime']<=$this->base->time)&&($adv['endtime']=='0'||$adv['endtime']>=$this->base->time)){
+			if(in_array($adv['type'],array('0','1','7','8'))&&($adv['starttime']=='0'||$adv['starttime']<=$this->base->time)&&($adv['endtime']=='0'||$adv['endtime']>=$this->base->time)){
 				$adv['targets']=explode(';',$adv['targets']);
-				if($adv['type']=='7'||array_intersect($adv['targets'], $categorys)){
+				if($adv['type']=='7'||$adv['type']=='8'||array_intersect($adv['targets'], $categorys)){
 					$advlist[$adv['type']][]=$adv;
 				}
 			}

@@ -24,6 +24,9 @@
 <div class="l w-230">
 	<div class="columns category p-b10">
 	<h2 class="col-h2">{$category['name']}</h2>
+	<!--{if isset($advlist[8]) && isset($setting[advmode]) && '1'==$setting[advmode]}-->
+	{$advlist[8][code]}
+	<!--{/if}-->
 	<!--{loop $subcategory $key $parent}-->
 	<dl class="i6-ff">
 		<dt><a href="{url category-view-$parent['parent']['cid']}" >{$parent['parent']['name']}</a></dt>

@@ -24,8 +24,8 @@ class template{
 		$this->vars[$k] = $v;
 	}
 
-	function setlang($langtype='zh',$filename){
-		include HDWIKI_ROOT.'/lang/'.$langtype.'/'.$filename.'.php';
+	function setlang($lang_name,$filename){
+		include HDWIKI_ROOT.'/lang/'.$lang_name.'/'.$filename.'.php';
 		$this->lang = &$lang;
 	}
 

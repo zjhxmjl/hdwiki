@@ -43,6 +43,6 @@ HDwiki
 3.<a href="http://www.92wiki.com/hdwiki/doc-view-517.html" target="_blank">左侧子分类添加广告</a>
 
 ------
->**<a href="https://github.com/zjhxmjl/hdwiki/issues" target="_blank">如有问题或BUG反馈请猛击这里</a>**
+>**<a href="https://github.com/zjhxmjl/hdwiki/issues" target="_blank">如有问题或BUG反馈请猛击这里</a>或加群：344348020**
 
 >**<a href="http://www.92wiki.com/hdwiki/category-view-20.html" target="_blank">更多参考资料请访问92wiki</a>**

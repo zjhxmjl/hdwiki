@@ -54,6 +54,7 @@ $lang['commonLicenseInfo'] ='版权信息';
 $lang['commonSystemCheck'] = '检查安装配置';
 $lang['commonDatabaseSetup'] = '设置数据库';
 $lang['commonAdministratorSetup'] = '设置管理员';
+$lang['commonCreateDataTable']= '创建数据表';
 $lang['commonInstallComplete'] = '安装完成';
 
 //Setup Common Tip

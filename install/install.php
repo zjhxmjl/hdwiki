@@ -43,7 +43,7 @@ $arrTitle = array (
 	$lang['commonSystemCheck'],
 	$lang['commonDatabaseSetup'],
 	$lang['commonAdministratorSetup'],
-	'创建数据表',
+	$lang['commonCreateDataTable'],
 	$lang['commonInstallComplete']
 );
 $arrStep = range(0, 5);
@@ -98,6 +98,7 @@ $extend = '';
 <p><?php echo $lang['commonSetupLanguage'] ?>
 <select id="lang" name="lang" onchange="selectlang('lang');">
 	<option value="zh"<?php  if('zh' == $lang_name) { ?> selected="selected"<?php } ?>> <?php echo $lang['zh']?></option>
+	<option value="en"<?php  if('en' == $lang_name) { ?> selected="selected"<?php } ?>> <?php echo $lang['en']?></option>
 </select>
 </p>
 </div>
@@ -1183,10 +1184,14 @@ EOT;
 			case 6:
 				//云搜索
 				clode_register_install();
-				$str ="<div id=\"wrapper\"><div class=\"col\">" .
-	"<h3>添加帮助文档</h3>
-	<p><input name='istestdata' type='checkbox' value='1' checked='checked' />添加帮助文档</p>
-	</div></div>";
+				$str = <<<EOT
+	<div id="wrapper">
+	<div class="col">
+	<h3>{$lang['AddHelpDocument']}</h3>
+	<p><input name='istestdata' type='checkbox' value='1' checked='checked'/>{$lang['AddHelpDocument']}</p>
+	</div>
+	</div>
+EOT;
 				break;
 			case 7:
 			//加入测试数据。

@@ -205,6 +205,6 @@ $lang['stepSetupSuccessTip'] = '祝贺您安装成功HDWiki！';
 $lang['stepSetupGoTOIndex'] = '去首页看看先！';
 
 $lang['shortOpenTagInvalid'] = '&#x5BF9;&#x4E0D;&#x8D77;,&#x8BF7;&#x5C06; php.ini &#x4E2D;&#x7684; short_open_tag &#x8BBE;&#x7F6E;&#x4E3AOn;&#x5426;&#x5219;&#x7A0B;&#x5E8F;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;';
-
+$lang['AddHelpDocument'] = '添加帮助文档';
 	
 ?>

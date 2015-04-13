@@ -1770,5 +1770,4 @@ $lang['operation_failure'] = 'Operation failed! ';
 $lang['recordClear'] = 'Delete background records';
 $lang['recordDelSucess'] = 'records deleted successfully';
 $lang['adv_position_8'] = 'sub-category on the left side advertising';
-
 ?>

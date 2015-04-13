@@ -159,15 +159,15 @@ html,body{height:100%;position:relative;overflow:hidden;}
 				</p>
 				</form>
 				<ul id="nav">
-				<li onclick="getMenu('index',this)" id="indexmenu" ><a href="javascript:void(0);"><span>首页</span></a></li>
+				<li onclick="getMenu('index',this)" id="indexmenu" ><a href="javascript:void(0);"><span>{lang styleindex}</span></a></li>
 				<li onclick="getMenu('global',this)" id="globalmenu"><a href="javascript:void(0);"><span>全 局</span></a></li>
-				<li onclick="getMenu('user',this)" id="usermenu"><a href="javascript:void(0);"><span>用户管理</span></a>|</li>
-				<li onclick="getMenu('content',this)"  id="contentmenu"><a href="javascript:void(0);"><span>内容管理</span></a>|</li>
+				<li onclick="getMenu('user',this)" id="usermenu"><a href="javascript:void(0);"><span>{lang commonUserManage}</span></a>|</li>
+				<li onclick="getMenu('content',this)"  id="contentmenu"><a href="javascript:void(0);"><span>{lang commonContentMng}</span></a>|</li>
 				<li onclick="getMenu('plug',this)" id="plugmenu"><a href="javascript:void(0);"><span>模板/插件</span></a>|</li>
-				<li onclick="getMenu('database',this)" id="databasemenu"><a href="javascript:void(0);"><span>数据库管理</span></a>|</li>
+				<li onclick="getMenu('database',this)" id="databasemenu"><a href="javascript:void(0);"><span>{lang dbMange}</span></a>|</li>
 				<li onclick="getMenu('unions',this)" id="toolsmenu"><a href="javascript:void(0);"><span>百科联盟</span></a>|</li>
 				<li onclick="getMenu('model',this)" id="toolsmenu"><a href="javascript:void(0);"><span>模块</span></a>|</li>
-				<li onclick="getMenu('statistics',this)" id="statisticsmenu"><a href="javascript:void(0);"><span>站内统计</span></a></li>
+				<li onclick="getMenu('statistics',this)" id="statisticsmenu"><a href="javascript:void(0);"><span>{lang statistics}</span></a></li>
 				<li onclick="getMenu('map',this)" id="mapmenu"><a href="javascript:void(0);"><span>Map</span></a></li>
 				</ul>
 			</div>
@@ -201,11 +201,11 @@ html,body{height:100%;position:relative;overflow:hidden;}
 					<div id='global'>
 						<ul>
 						<li><a href="index.php?admin_setting-base" target="main"  class="on">站点设置</a></li>
-						<li><a href="index.php?admin_channel" target="main">基本设置</a></li>
+						<li><a href="index.php?admin_channel" target="main">{lang siteConfigBase}</a></li>
 						<li><a href="index.php?admin_setting-sec" target="main">扩展设置</a></li>
 						<li><a href="index.php?admin_setting-index" target="main">内容设置</a></li>
-						<li><a href="index.php?admin_friendlink" target="main">友情链接</a></li>
-						<li><a href="index.php?admin_adv" target="main">广告管理</a></li>
+						<li><a href="index.php?admin_friendlink" target="main">{lang siteConfigFriendlink}</a></li>
+						<li><a href="index.php?admin_adv" target="main">{lang custom_adv}</a></li>
 						<li><a href="index.php?admin_sitemap" target="main">Sitemap</a></li>
 						<li><a href="index.php?admin_upgrade" target="main">自动升级</a></li>
 						</ul>
@@ -214,23 +214,23 @@ html,body{height:100%;position:relative;overflow:hidden;}
 					<div id='user'>
 						<ul>
 						<li><a href="index.php?admin_setting-baseregister" target="main" >注册设置</a></li>
-						<li><a href="index.php?admin_user" target="main"  class="on">管理用户</a></li>
-						<li><a href="index.php?admin_regular-groupset" target="main">管理权限</a></li>
-						<li><a href="index.php?admin_usergroup" target="main">管理用户组</a></li>
+						<li><a href="index.php?admin_user" target="main"  class="on">{lang commonMngUser}</a></li>
+						<li><a href="index.php?admin_regular-groupset" target="main">{lang regularMng}</a></li>
+						<li><a href="index.php?admin_usergroup" target="main">{lang commonUsergroupMng}</a></li>
 						</ul>
 					</div>
 
 					<div id='content'>
 						<ul>
-							<li><a href="index.php?admin_category-list" target="main">分类管理</a></li>
+							<li><a href="index.php?admin_category-list" target="main">{lang commonCatMng}</a></li>
 							<li><a href="index.php?admin_doc" target="main"  class="on">词条管理</a></li>
 							<li><a href="index.php?admin_attachment" target="main">附件管理</a></li>
 							<li><a href="index.php?admin_comment" target="main">评论管理</a></li>
-							<li><a href="index.php?admin_tag-hottag" target="main">热门标签</a></li>
-							<li><a href="index.php?admin_hotsearch" target="main">热门搜索</a></li>
-							<li><a href="index.php?admin_word" target="main">词语过滤</a></li>
+							<li><a href="index.php?admin_tag-hottag" target="main">{lang message_hottag}</a></li>
+							<li><a href="index.php?admin_hotsearch" target="main">{lang hot_search}</a></li>
+							<li><a href="index.php?admin_word" target="main">{lang siteConfigWord}</a></li>
 							<li><a href="index.php?admin_datacall" target="main">数据调用</a></li>
-							<li><a href="index.php?admin_recycle" target="main">回收站</a></li>
+							<li><a href="index.php?admin_recycle" target="main">{lang imagerecyclemanage}</a></li>
 						</ul>
 					</div>
 
@@ -244,9 +244,9 @@ html,body{height:100%;position:relative;overflow:hidden;}
 
 					<div id='database'>
 						<ul>
-						<li><a href="index.php?admin_db-backup" target="main" class="on">数据库备份</a></li>
-						<li><a href="index.php?admin_db-tablelist" target="main">数据库优化</a></li>
-						<li><a href="index.php?admin_db-sqlwindow" target="main">SQL查询窗口</a></li>
+						<li><a href="index.php?admin_db-backup" target="main" class="on">{lang dbBackup}</a></li>
+						<li><a href="index.php?admin_db-tablelist" target="main">{lang dbOptimize}</a></li>
+						<li><a href="index.php?admin_db-sqlwindow" target="main">{lang sqlWindow}</a></li>
 						<li><a href="index.php?admin_db-storage" target="main">数据存储设置</a></li>
 						</ul>
 					</div>
@@ -263,7 +263,7 @@ html,body{height:100%;position:relative;overflow:hidden;}
 
 					<div id='model'>
 						<ul>
-						<li><a href="index.php?admin_image" target="main" class="on">图片百科</a></li>
+						<li><a href="index.php?admin_image" target="main" class="on">{lang image_wiki}</a></li>
 						<li><a href="index.php?admin_gift" target="main">礼品商店</a></li>
 						<li><a href="index.php?admin_safe" target="main">木马扫描</a></li>
 						<li><a href="index.php?admin_filecheck" target="main">文件检测</a></li>
@@ -275,13 +275,13 @@ html,body{height:100%;position:relative;overflow:hidden;}
 					
 					<div id='statistics'>
 						<ul>
-						<li><a href="index.php?admin_statistics-stand" target="main" class="on">基本概况</a></li>
-						<li><a href="index.php?admin_statistics-cat_toplist" target="main">分类排行</a></li>
-						<li><a href="index.php?admin_statistics-doc_toplist" target="main">词条排行</a></li>
-						<li><a href="index.php?admin_statistics-edit_toplist" target="main">编辑排行榜</a></li>
-						<li><a href="index.php?admin_statistics-credit_toplist" target="main">经验排行</a></li>
-						<li><a href="index.php?admin_statistics-admin_team" target="main">管理团队</a></li>
-						<li><a href="index.php?admin_log" target="main">后台操作记录</a></li>
+						<li><a href="index.php?admin_statistics-stand" target="main" class="on">{lang stand}</a></li>
+						<li><a href="index.php?admin_statistics-cat_toplist" target="main">{lang cat_toplist}</a></li>
+						<li><a href="index.php?admin_statistics-doc_toplist" target="main">{lang doc_toplist}</a></li>
+						<li><a href="index.php?admin_statistics-edit_toplist" target="main">{lang edit_toplist}</a></li>
+						<li><a href="index.php?admin_statistics-credit_toplist" target="main">{lang credit_toplist}</a></li>
+						<li><a href="index.php?admin_statistics-admin_team" target="main">{lang admin_team}</a></li>
+						<li><a href="index.php?admin_log" target="main">{lang siteoperationlog}</a></li>
 						</ul>
 					</div>
 

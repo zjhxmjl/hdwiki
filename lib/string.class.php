@@ -13,7 +13,7 @@ class string {
 	}
 	/**
 	 * 
-	 * @param unknown $str
+	 * @param string $str
 	 * @param number $start
 	 * @param number $limit
 	 * @return unknown|Ambigous <unknown, string>
@@ -24,15 +24,15 @@ class string {
 			if ( $start >= $strlen ) {
 				return $str;
 			}
-			$clen=0;
-			for($i=0;$i<$strlen;$i++,$clen++){
-				if(ord(substr($str,$i,1))>0xa0){
-					if ($clen>=$start){
-						$tmpstr.=substr($str,$i,2);
+			$clen = 0;
+			for ( $i=0; $i < $strlen; $i++,$clen++ ) {
+				if ( ord( substr( $str, $i, 1 ) ) > 0xa0 ) {
+					if ( $clen >= $start ) {
+						$tmpstr .= substr( str, $i, 2 );
 					}
 					$i++;
-				}else{
-					if ($clen>=$start){
+				} else {
+					if ( $clen >= $start ) {
 						$tmpstr.=substr($str,$i,1);
 					}
 				}

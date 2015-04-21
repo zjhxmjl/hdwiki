@@ -1,13 +1,25 @@
 <?php
-
+/**
+ * @file
+ *
+ */
 class string {
-
+	/**
+	 * 
+	 * 
+	 */
 	function string() {
-		die("Class string can not instantiated!");
+		die( "Class string can not instantiated!" );
 	}
-	
-	function substring($str, $start=0, $limit=12) {
-		if('gbk'==strtolower(WIKI_CHARSET)){
+	/**
+	 * 
+	 * @param unknown $str
+	 * @param number $start
+	 * @param number $limit
+	 * @return unknown|Ambigous <unknown, string>
+	 */
+	function substring( $str, $start=0, $limit=12 ) {
+		if ( 'gbk' == strtolower(WIKI_CHARSET)){
 			$strlen=strlen($str);
 			if ($start>=$strlen){
 				return $str;

@@ -33,8 +33,8 @@ class template{
 	
 	function display($file){
 		GLOBAL $starttime,$mquerynum;
-		$mtime = explode(' ', microtime());
-		$this->assign('runtime', number_format($mtime[1] + $mtime[0] - $starttime,6));
+		$wgMtime = explode(' ', microtime());
+		$this->assign('runtime', number_format($wgMtime[1] + $wgMtime[0] - $starttime,6));
 		$this->assign('querynum',$mquerynum);
 		extract($this->vars, EXTR_SKIP);
 		include $this->gettpl($file);

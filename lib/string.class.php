@@ -20,8 +20,8 @@ class string {
 	 */
 	function substring( $str, $start=0, $limit=12 ) {
 		if ( 'gbk' == strtolower(WIKI_CHARSET)){
-			$strlen=strlen($str);
-			if ($start>=$strlen){
+			$strlen = strlen( $str );
+			if ( $start >= $strlen ) {
 				return $str;
 			}
 			$clen=0;

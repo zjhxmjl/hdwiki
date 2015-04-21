@@ -218,6 +218,3 @@ class hdwiki {
 	}
 
 }
-
-
-?>

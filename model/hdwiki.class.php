@@ -6,7 +6,7 @@
 # 读取权限验证
 !defined( 'IN_HDWIKI' ) && exit( 'Access Denied' );
 
-define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc());
+define( 'MAGIC_QUOTES_GPC', get_magic_quotes_gpc() );
 
 require HDWIKI_ROOT.'/config.php';
 require HDWIKI_ROOT.'/lib/string.class.php';
@@ -78,12 +78,10 @@ class hdwiki {
 		
 		if ( empty( $this->get[0] ) ) {
 			$this->get[0] = 'index';
-		}
-		
+		}		
 		if ( empty( $this->get[1] ) ) {
 			$this->get[1] = 'default';
-		}
-		
+		}		
 		if ( count( $this->get ) < 2 ) {
 			exit( ' Access Denied !' );
 		}

@@ -21,9 +21,13 @@ class channelmodel {
 		$channellist=array();
 		$query=$this->db->query('SELECT * FROM '.DB_TABLEPRE.'channel ORDER BY displayorder,id DESC');
 		while($channel=$this->db->fetch_array($query)){
-			if(substr($channel['url'],0,7)!="http://"){
-				$channel['url']='http://'.$channel['url'];
-			}
+		if(substr($flink['url'],0,4)!="http"){
+					if(substr($flink['url'],0,5) =="https"){
+						$flink['url']="https://".$flink['url'];
+					}else{
+						$flink['url']="http://".$flink['url'];
+					}
+				}
 			$channellist[]=$channel;
 		}
 		return $channellist;

@@ -87,7 +87,8 @@
 <!--{/if}-->
 <div class="r w-230">
 	<div class="columns ad p-b8">
-		<p class="a-c m-t10 col-p" > {lang moreDetail}<a href="http://www.hudong.com/wiki/{eval echo urlencode({$searchtext})}?hf=hdwiki_so_www" target="_blank">{lang hudong}</a><br/>
+<!-- 		<p class="a-c m-t10 col-p" > {lang moreDetail}<a href="http://www.hudong.com/wiki/{eval echo urlencode({$searchtext})}?hf=hdwiki_so_www" target="_blank">{lang hudong}</a><br/> -->
+		<p class="a-c m-t10 col-p" > {lang moreDetail}<a href="http://www.hdwiki.net/index.php?search-fulltext-title-{eval echo rawurlencode({$searchtext})}--all-0-within-time-desc-1" target="_blank">{lang hudong}</a><br/>
 			{lang moreDetail}<a href="http://www.google.cn/search?hl=zh-CN&newwindow=1&q={eval echo urlencode({$searchtext})}&aq=f" target="_blank">{lang google}</a> </p>
 	</div>
 </div>

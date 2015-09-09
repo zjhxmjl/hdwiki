@@ -617,7 +617,7 @@ $lang['checkcredits']='积分兑换';
 $lang['userTitle']='头衔';
 $lang['NowCreatingDoc']='以下是您正在编写的词条内容。';
 $lang['moreDetail']='更多详情，尽在';
-$lang['hudong']='互动百科';
+$lang['hudong']='Hdwiki.net';
 $lang['google']='谷歌搜索';
 $lang['messageTip']='页面将在3秒后自动跳转到下一页，<a href="$redirect" >立即跳转</a>';
 $lang['shop']='礼品商店';
